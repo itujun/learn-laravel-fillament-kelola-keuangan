@@ -27,8 +27,11 @@ php artisan make:filament-user
 ```
 
 USER
+
 name = Juna
+
 email = itujun@example.com
+
 password = secret
 
 ### Create model
@@ -57,4 +60,10 @@ Jika sudah melakukan symlink namun gambar masih tidak muncul, sesuaikan APP_URL 
 
 ```bash
 APP_URL=http://127.0.0.1:8000
+```
+
+### Install widget di halaman dashboard
+
+```bash
+php artisan make:filament-widget StatsOverview --stats-overview
 ```
