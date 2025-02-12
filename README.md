@@ -8,6 +8,14 @@ composer require filament/filament:"^3.2.52" -W
 php artisan filament:install --panels
 ```
 
+### Image
+
+[Flaticon](https://www.flaticon.com/);
+
+### Icon
+
+[Icon](https://blade-ui-kit.com/blade-icons?set=1#search);
+
 ## Langkah-langkah
 
 ### Create user
