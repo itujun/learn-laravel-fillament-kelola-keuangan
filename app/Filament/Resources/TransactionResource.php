@@ -29,7 +29,7 @@ class TransactionResource extends Resource
                 Forms\Components\Select::make('category_id')
                     ->required()
                     ->relationship('category', 'name'),
-                Forms\Components\DatePicker::make('date')
+                Forms\Components\DatePicker::make('date_transaction')
                     ->required()
                     ->maxDate(now()),
                 Forms\Components\TextInput::make('amount')
@@ -51,7 +51,7 @@ class TransactionResource extends Resource
                     ->label('Kegiatan'),
                 Tables\Columns\ImageColumn::make('category.image')
                     ->sortable(),
-                Tables\Columns\TextColumn::make('date')
+                Tables\Columns\TextColumn::make('date_transaction')
                     ->date('d F Y')
                     ->sortable()
                     ->label('Tanggal'),

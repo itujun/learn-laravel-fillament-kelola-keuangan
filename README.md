@@ -8,13 +8,21 @@ composer require filament/filament:"^3.2.52" -W
 php artisan filament:install --panels
 ```
 
-### Image
+### Kebutuhan Image
 
-[Flaticon](https://www.flaticon.com/);
+Image didapatkan dari [Flaticon](https://www.flaticon.com/).
 
-### Icon
+### Kebutuhan Icon
 
-[Icon](https://blade-ui-kit.com/blade-icons?set=1#search);
+Icon didapatkan dari [Icon](https://blade-ui-kit.com/blade-icons?set=1#search).
+
+### Install Laravel Trend
+
+[Dokumentasi Laravel Trend](https://github.com/Flowframe/laravel-trend).
+
+```bash
+composer require flowframe/laravel-trend
+```
 
 ## Langkah-langkah
 
@@ -66,4 +74,11 @@ APP_URL=http://127.0.0.1:8000
 
 ```bash
 php artisan make:filament-widget StatsOverview --stats-overview
+```
+
+### Install chart widget di halaman dashboard
+
+```bash
+php artisan make:filament-widget WPemasukanChart --chart
+php artisan make:filament-widget WPengeluaranChart --chart
 ```
